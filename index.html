@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/style/js.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch&family=Noto+Sans+JP:wght@500&family=Quicksand:wght@400;700&family=Rubik+Lines&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="brand">Commandant</div>
+        <nav id="navbar" class="navbar">
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="hidden" id="menuList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certi">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <main>
+        <article id="home" class="home">
+            <h2>Free Your self-!!</h2>
+            <h1>- アンビーヤ -</h1>
+            <p>a person who is between truth and falsehood who tries to run and run until he reaches true strength</p>
+            <img class="image-home" src="/img/bg5.svg" alt="">
+        </article>
+
+        <div class="isi">
+            <article id="about" class="About">
+                <h1>About Me-?</h1>
+                <p>I am an ordinary human being who has average abilities like humans in general, but I want to develop further than ordinary humans. This is me, an ordinary human being, a developing human being.</p>
+            </article>
+            <hr>
+            <section id="certi" class="Certificate">
+                <h1>This My Certificate</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Capture.PNG" alt="">
+                            <h2>Belajar Dasar Google Cloud</h2>
+                            <p>Dicoding Certificate</p>
+                            <a href="sertifikat_course_337_3247378_201023043510.pdf" class="btn">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Capture2.PNG" alt="">
+                            <h2>Pengenalan ke Logika Pemrograman</h2>
+                            <p>Dicoding Certificate,(Programming Logic 101)</p>
+                            <a href="sertifikat_course_dicoding.pdf" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <div id="contact" class="kontak">
+                <div class="info-tambahan">
+                    <h1>Information</h1>
+                    <table>
+                        <tr>
+                            <th>Location</th>
+                            <td>Indonesian, West Java, Bogor, Benteng Village, 06/05</td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td>k.a_fei</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>a.khotamul@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td>+62 1918100453</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-contact">
+                    <h1>Contact Me</h1>
+                    <form id="kontak" action="mailto:a.khotamul@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="underline"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="underline"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <span class="underline"></span>
+                        </div>
+
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+
+            <aside id="profile" class="hide-aside">
+                <button id="toggleAside"><i class="fa fa-user"></i> Click ---</button>
+                <div class="aside-content">
+                    <div class="profile-info">
+                        <h1>Profile</h1>
+                        <img src="/img/gweh.jpg" alt="Your Profile Image">
+                        <p>Name : Muhammad Khotamul Anbiya</p>
+                        <p>Email : a.khotamul@gmail.com</p>
+                        <p>Experience : Nope, Still Studying</p>
+                        <p>Motto : If it is too high then go low <br> and if it is too low then go up</p>
+                    </div>
+                </div>
+            </aside>
+
+    </main>
+
+    <footer>
+        <p> Copyright@2023 - アンビーヤ - All Right Reserved</p>
+    </footer>
+</body>
+
+<script src="/style/js.js"></script>
+
+</html>

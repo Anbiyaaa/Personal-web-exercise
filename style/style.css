@@ -1,0 +1,607 @@
+    * {
+        padding: 0;
+        margin: 0;
+        top: 0;
+    }
+
+    body {
+        min-height: 100vh;
+        background-image: url('../img/1097968.jpg');
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        z-index: 999;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: flex-end;
+        /* Mengubah nilai ini menjadi flex-end */
+        align-items: center;
+        /* Menambahkan align-items untuk penataan vertikal jika diperlukan */
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* Menggunakan right untuk menempatkannya di sebelah kanan */
+        z-index: 999;
+        width: 100%;
+        /* Menetapkan lebar 100% untuk mengisi lebar viewport */
+        transition: background-color 0.3s ease-in-out;
+        /* Efek transisi untuk smooth transition */
+    }
+
+    #navbar.scrolled {
+        background-color: rgb(39, 82, 85);
+        z-index: 0;
+        scroll-behavior: smooth;
+    }
+
+    #navbar.scrolled ul a{
+        color: white;
+    }
+
+    #navbar ul {
+        text-align: center;
+        padding: 40px 40px;
+        display: flex;
+        gap: 2rem;
+        list-style-type: none;
+        z-index: 999;
+    }
+
+    #navbar ul .btn {
+        padding: 5px 20px;
+    }
+
+    #navbar ul .btn1 button {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 5px 30px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(124, 54, 255);
+        text-decoration: none;
+    }
+
+    #navbar .menu-toggle{
+        display: none;
+        font-size: 28px;
+        padding: 20px;
+        color: white;
+    }
+
+    nav ul .btn1 button:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    #navbar ul a {
+        justify-content: flex-end;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        text-decoration: none;
+        color: rgb(19, 19, 19);
+        padding: 10px;
+        z-index: 999;
+    }
+
+    header .brand {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+        font-family: 'Rubik Lines', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+        text-decoration: none;
+        color: rgb(95, 75, 204);
+        padding: 30px 30px;
+        scroll-behavior: smooth;
+        z-index: 999;
+    }
+
+    #navbar ul a:hover {
+        background-color: #7b34ff;
+        color: #ffffff;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+    main {
+        font-family: 'Chakra Petch', sans-serif;
+        color: white;
+
+    }
+
+    main .home {
+        top: 0;
+        position: relative;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 0;
+    }
+
+    main .home h2 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 69px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100px;
+        letter-spacing: 0.2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #ffffff;
+
+
+        position: absolute;
+        top: 40%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(-50%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 19%;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 999;
+
+    }
+
+    main .home h1 {
+        font-family: 'Noto Sans Japanese', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #8f8f8f;
+        padding: 3px;
+        border-radius: 2px;
+        color: #000000;
+
+        position: absolute;
+        top: 63%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(-50%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 19%;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 999;
+
+    }
+
+    main .home p {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        width: 270px;
+        text-transform: uppercase;
+        padding: 2px;
+        color: #8f8f8f;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+        position: absolute;
+        top: 70%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(-50%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 19%;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 999;
+
+    }
+
+
+    main .home .image-home {
+        position: relative;
+        object-fit: 100%;
+        top: 0%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(0%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 0;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 0;
+
+    }
+
+
+    main .isi {
+        display: contents;
+    }
+
+    .isi .About h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .isi .About {
+        padding-top: 6%;
+        width: 800px;
+        padding-bottom: 5%;
+        margin: 0 auto;
+        /* Ini akan menengahkan section dengan lebar 800px */
+    }
+
+    .About p {
+        background-color: #0c444b83;
+        border-radius: 10px;
+        font-size: 23px;
+        text-align: center;
+        /* Ini akan menengahkan teks dalam elemen p */
+    }
+
+    .isi h1 {
+        padding: 20px;
+    }
+
+    .isi .Certificate {
+        padding-top: 5%;
+        color: #1e2022;
+        text-align: center;
+        }
+
+    .isi .Certificate h1{
+        font-size: 30px;
+        color: white;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 500px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Efek bayangan */
+        background-color: #c7c7c7;
+        margin: 20px;
+        overflow: hidden;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content img {
+        width: 100%;
+    }
+
+    .card-content h2 {
+        margin-top: 0;
+    }
+
+    .card-content p {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 5px;
+        background-color: #1f4b7e;
+        color: #ffffff;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: #b282c9;
+    }
+
+    /* Main layout styles */
+    .kontak {
+        display: flex;
+        height: 650px;
+    }
+
+    .info-tambahan {
+        flex: 1;
+        padding: 80px;
+        background: linear-gradient(to bottom, #336e4e, #031b50);
+        /* Gradient dari atas ke bawah, ganti warna sesuai keinginan */
+        /* Atau, untuk gradient diagonal, Anda bisa menggunakan:
+        background: linear-gradient(to bottom right, #ffcc00, #ff6666); */
+        color: #fff;
+        /* Warna teks yang kontras dengan latar belakang gradient */
+    }
+
+    .info-tambahan table {
+        text-align: left;
+    }
+
+    .info-tambahan table th {
+        padding: 10px;
+    }
+
+    .form-contact {
+        flex: 1;
+        padding: 80px;
+        background: linear-gradient(to bottom, #336e4e, #031b50);
+        /* Gradient dari atas ke bawah, ganti warna sesuai keinginan */
+        /* Atau, untuk gradient diagonal, Anda bisa menggunakan:
+        background: linear-gradient(to bottom right, #ffcc00, #ff6666); */
+        color: #fff;
+        /* Warna teks yang kontras dengan latar belakang gradient */
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        border: none;
+        border-radius: 10px;
+        border-bottom: 1px solid #d3d3d3;
+        padding: 5px;
+        outline: none;
+        font-size: 16px;
+        transition: border-color 0.3s ease-in-out;
+        width: 100%;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-bottom: 1px solid #007bff;
+        /* Ganti warna sesuai kebutuhan */
+    }
+
+    .underline {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #1e2022;
+        /* Ganti warna sesuai kebutuhan */
+        transform: scaleX(0);
+        /* Untuk menghilangkan garis bawah secara default */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    input[type="text"]:focus~.underline,
+    input[type="email"]:focus~.underline,
+    textarea:focus~.underline {
+        transform: scaleX(1);
+        /* Menampilkan garis bawah saat input dalam fokus */
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        border-style: none;
+    }
+
+    /* Ganti sesuai kebutuhan Anda */
+    #profile {
+        position: fixed;
+        top: 25%;
+        transform: translateY(0%); /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        /* Sesuaikan dengan posisi yang diinginkan */
+        right: 0px;
+        /* Sesuaikan dengan posisi yang diinginkan */
+        width: 400px;
+        /* Sesuaikan lebar aside */
+        background-color: #2c6d75;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #profile.hide-aside {
+        transform: translateX(100%);
+        /* Untuk menyembunyikan aside saat awalnya */
+    }
+
+    #toggleAside {
+        cursor: pointer;
+        border-radius: 20px;
+        border-style: none;
+        background-color: #1e2022;
+        color: #fff;
+        padding: 15px;
+        margin-bottom: 80%;
+        position: fixed; /* Posisi tetap */
+        top: 50%; /* Menempatkan elemen di tengah vertikal */
+        left: -18%;
+        transform: translateY(-50%); /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        /* ... (gaya lain yang Anda butuhkan) */
+      }
+
+    .aside-content {
+        text-align: center;
+    }
+    
+    .profile-info h1 {
+        margin-bottom: 10px;
+    }
+
+    .profile-info img {
+        width: 150px;
+        /* Sesuaikan ukuran gambar profil */
+        height: 150px;
+        /* Sesuaikan ukuran gambar profil */
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .profile-info p {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+
+    footer {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        margin: 20px;
+        padding: 60px;
+        text-align: center;
+    }
+
+
+  /* Gaya-gaya lainnya di luar media query */
+
+/* Gaya untuk tampilan menu hamburger */
+/*.menu-toggle {
+    display: none; /* Sembunyikan tombol hamburger secara default */
+
+
+@media only screen and (max-width : 768px) {
+    body{
+        width: max-content;
+    }
+    #navbar{
+        flex-wrap: wrap;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        width:100% ;
+    }
+
+    #navbar ul.hidden{
+        display: none;
+    }
+
+    #navbar .menu-toggle{
+        display: flex;
+        text-align: center;
+        z-index: 999;
+    }
+
+    main .home .image-home {
+        position: relative;
+        object-fit: 100%;
+        width: max-content;
+        top: 20%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(0%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 0;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 0;
+
+    }
+
+    main{
+        max-width: 801px;
+    }
+
+    main .home h2 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100px;
+        letter-spacing: 0.2rem;
+        text-shadow: 2px 2px 4px rgba(63, 63, 63, 0.7);
+        color: #ffffff;
+
+
+        position: absolute;
+        top: 40%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(-50%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 19%;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 999;
+
+    }
+
+    main .home h1 {
+        font-family: 'Noto Sans Japanese', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #8f8f8f;
+        padding: 3px;
+        border-radius: 2px;
+        color: #000000;
+
+        position: absolute;
+        top: 63%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(-50%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 19%;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 999;
+
+    }
+
+    main .home p {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 7px;
+        font-weight: 700;
+        width: 270px;
+        text-transform: uppercase;
+        padding: 4px;
+        color: #8f8f8f;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+        position: absolute;
+        top: 70%;
+        /* Meletakkan elemen di tengah vertikal */
+        transform: translateY(-50%);
+        /* Menggeser elemen ke atas sejauh setengah dari tingginya */
+        left: 19%;
+        /* Meletakkan elemen di sisi kiri konten */
+        z-index: 999;
+
+    }
+
+    .isi .Certificate{
+        width: min-content;
+        padding-left: 17%;
+        text-align: center;
+    }
+
+    .kontak{
+        display: flex;
+        flex-direction: column;
+        width: 801px;
+    }
+
+    #profile{
+        top: 5%;
+    }
+
+    footer{
+        width: max-content;
+        text-align: center;
+        padding-left: 20%;
+        padding-top:60% ;
+
+    }
+
+}
